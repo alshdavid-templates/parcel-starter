@@ -1,0 +1,16 @@
+{
+  "name": "@alshdavid/parcel-starter",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npx parcel build"
+  },
+  "targets": {
+    "default": {
+      "source": "./src/index.html",
+      "distDir": "./dist"
+    }
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
