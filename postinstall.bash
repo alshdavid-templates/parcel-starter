@@ -43,5 +43,11 @@ echo "Parcel Source Path: $parcel_src_path"
 echo "selecting 'package.local.json'"
 rm -rf package.json
 rm -rf package.latest.json
+rm -rf postinstall.bash
+rm -rf .git
 mv package.local.json package.json
 sed -i 's@${PARCEL_SRC_PATH}@'"$parcel_src_path"'@g' package.json
+
+git init
+git add .
+git commit -m "Initial commit"
